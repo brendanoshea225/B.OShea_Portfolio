@@ -1,0 +1,313 @@
+/* spacing on all sections */
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo-img{
+    width: 12rem;
+    border-radius: 100%;
+}
+    
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(images/HeroNYC2.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    font-family: Bitter-Italic, Times, serif;
+    font-size: large;
+}
+
+/* text css above hero image*/
+/* General styles */
+
+.section.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_title {
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-family: SourceSansPro-Black, Helvetica, Arial;
+}
+.hero_desc {
+    font-size: 2.4rem;
+    font-family: Lato, sans-serif;
+}
+
+.hero_text {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(4px 4px 8px gray);
+}
+
+.action_btns {
+    display: flex;
+    gap: .7rem;
+}
+
+.action_btns button {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hero_button {
+    background-color: #a855f7;
+    color: #ffffff; 
+    transition: 0.3s ease;
+}
+
+.hero_button:hover {
+    background-color: #ffffff;
+    color: #9333ea;
+}
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 3rem;
+        text-align: right;
+    }
+
+    .hero_text {
+        font-size: 2.4rem;
+        text-align: right;
+    }
+
+    .hero_desc {
+        font-size: 1.8rem;
+        text-align: right;
+    }
+}
+
+.portfolio {
+    color: var(--primary-color);
+}
+
+.text-center .btn{
+    color: #ffffff;
+    background-color: #a855f7;
+}
+
+.text-center .btn:hover{
+    color: #a855f7;
+    background-color: #ffffff;
+}
+
+.hero_image {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Align the image to the right side of the screen */
+    max-width: 50%; /* Limit the maximum width of the image */
+}
+
+.hero_image img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Set the maximum width of the image to its container */
+    max-height: 80vh;
+    margin-left: 39%;
+}
+
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+    max-height: 25rem;
+    border-radius: 50px;
+    border: black solid;
+}
+
+.col-lg-8 p{
+    font-size: 1.2rem;
+}
+
+.col-lg-8 img{
+    margin-left: 10%;
+    width: 75%;
+}
+
+.col-md-6 ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    line-height: 3rem;
+}
+
+.row mt-3 p {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a855f7; 
+}
+
+.navbar.navbarDark {
+    background-color: #000;
+}
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-instagram:hover,
+.fa-linkedin:hover, 
+.fa-github:hover {
+    color: #fff;
+}
+.fab {
+    color: #000000;
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-img-top {
+    max-height: 13rem;
+    min-height: 13rem;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: blue;
+}
+.servicesText:hover {
+    border: 1px solid blue;
+}
+
+.custom-contact-button {
+    background-color: #a855f7;
+    color: #ffffff; 
+    transition: 0.3s ease;
+}
+
+.custom-contact-button:hover{
+    background-color: #ffffff;
+    color: #9333ea;
+}
+
+
+.footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.port_link i{
+    font-size: 1.9rem;
+    color: #a855f7;
+}
+
+.port_link i:hover{
+    font-size: 1.9rem;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .hero_text {
+         text-align: right;
+         font-size: 1rem;
+     }
+
+     .hero_text .hero_desc{
+        display: none;
+     }
+
+    .hero_image {
+         display: none;
+     }
+
+     .action_btns{
+        margin-left: 7rem;
+     }
+ }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .hero_text {
+        text-align: right;
+        font-size: .5rem;
+    }
+
+    .hero_text .hero_desc{
+        display: none;
+     }
+
+   .hero_image {
+        display: none;
+    }
+}
+
